@@ -23,11 +23,10 @@ import torchvision
 import cv2
 import os
 import matplotlib
-from matplotlib import pyplot as plt
-# from mpl_toolkits.mplot3d import Axes3D
-import pickle
-
 matplotlib.use('Agg')
+from matplotlib import pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import pickle
 
 
 def save_batch_image_with_joints_multi(batch_image,
