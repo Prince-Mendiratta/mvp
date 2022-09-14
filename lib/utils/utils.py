@@ -148,7 +148,7 @@ def save_checkpoint(states, is_best, output_dir,
     if is_best and 'state_dict' in states:
         torch.save(states['state_dict'],
                    os.path.join(output_dir, 'model_best.pth.tar'))
-        os.system("cp {} /content/drive/MyDrive/mvp/logs".format(os.path.join(output_dir, 'model_best.pth.tar'))
+        os.system("cp {} /content/drive/MyDrive/mvp/logs".format(os.path.join(output_dir, 'model_best.pth.tar')))
 
 
 def load_backbone_panoptic(model, pretrained_file):
